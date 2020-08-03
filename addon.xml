@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="docker.harekaze.alpine" name="alpine" version="0.0.1" provider-name="Harekaze project">
+<addon id="docker.harekaze.epgstation" name="epgstation" version="0.0.1" provider-name="Harekaze project">
 	<requires>
 		<import addon="os.libreelec.tv" version="7.0"/>
 		<import addon="service.system.docker" version="0.0.0"/>
@@ -10,11 +10,11 @@
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<license>GPL v3.0</license>
-		<summary>alpine</summary>
-		<source>https://github.com/Harekaze/docker.harekaze.alpine/</source>
-		<website>https://github.com/Harekaze/docker.harekaze.alpine/wiki</website>
-		<forum>https://github.com/Harekaze/docker.harekaze.alpine/issues</forum>
+		<summary>epgstation</summary>
+		<source>https://github.com/Harekaze/docker.harekaze.epgstation/</source>
+		<website>https://github.com/Harekaze/docker.harekaze.epgstation/wiki</website>
+		<forum>https://github.com/Harekaze/docker.harekaze.epgstation/issues</forum>
 		<language>en ja</language>
-		<disclaimer>alpine</disclaimer>
+		<disclaimer>epgstation</disclaimer>
 	</extension>
 </addon>
