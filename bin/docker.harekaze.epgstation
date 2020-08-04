@@ -52,6 +52,7 @@ function start() {
     -v "$ADDON_HOME/data":/app/data \
     -v "$ADDON_HOME/logs":/app/logs \
     -p "$SETTING_SERVICE_PORT":8888 \
+    -p 8889:8889 \
     "$DOCKER_IMAGE":"$IMAGE_VERSION"
 }
 
