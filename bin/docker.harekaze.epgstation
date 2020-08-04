@@ -19,8 +19,11 @@ fi
 # https://github.com/LibreELEC/LibreELEC.tv/blob/9.2.3/packages/mediacenter/kodi/profile.d/00-addons.conf
 oe_setup_addon "$name"
 
+CONFIG_DIR=/storage/.config/epgstation/
+
 function setup() {
-  cp -r -u $ADDON_DIR/config $SETTING_CONFIG_DIR
+  mkdir -p $CONFIG_DIR/
+  cp -r -u $ADDON_DIR/config/* $CONFIG_DIR/
   mkdir -p $ADDON_HOME/thumbnail
   mkdir -p $ADDON_HOME/data
   mkdir -p $ADDON_HOME/logs
@@ -47,11 +50,11 @@ function start() {
     -e LD_LIBRARY_PATH=/usr/local/hostlib:/usr/local/ffmpeg-tools \
     -v /usr/lib:/usr/local/hostlib:ro \
     -v /storage/.kodi/addons/tools.ffmpeg-tools:/usr/local/ffmpeg-tools:ro \
-    -v "$SETTING_CONFIG_DIR":/app/config \
+    -v "$CONFIG_DIR":/app/config \
     -v "$ADDON_HOME/thumbnail":/app/thumbnail \
     -v "$ADDON_HOME/data":/app/data \
     -v "$ADDON_HOME/logs":/app/logs \
-    -p "$SETTING_SERVICE_PORT":8888 \
+    -p 8888:8888 \
     -p 8889:8889 \
     "$DOCKER_IMAGE":"$IMAGE_VERSION"
 }
