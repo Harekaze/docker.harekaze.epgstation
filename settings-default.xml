@@ -1,2 +1,3 @@
 <settings>
+	<setting id="SETTING_RECORDING_DIR" value="/storage/tvshows/" />
 </settings>

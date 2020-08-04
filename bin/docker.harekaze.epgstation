@@ -54,6 +54,7 @@ function start() {
     -v "$ADDON_HOME/thumbnail":/app/thumbnail \
     -v "$ADDON_HOME/data":/app/data \
     -v "$ADDON_HOME/logs":/app/logs \
+    -v "$SETTING_RECORDING_DIR":/app/recorded \
     -p 8888:8888 \
     -p 8889:8889 \
     "$DOCKER_IMAGE":"$IMAGE_VERSION"
