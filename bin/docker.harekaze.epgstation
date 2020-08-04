@@ -41,6 +41,7 @@ function start() {
   docker rm "$name" 2>/dev/null
   docker run --name="$name" \
     --rm \
+    --link=docker.harekaze.mirakurun \
     --network=bridge \
     -e TZ="$TIMEZONE" \
     -e LD_LIBRARY_PATH=/usr/local/hostlib:/usr/local/ffmpeg-tools \

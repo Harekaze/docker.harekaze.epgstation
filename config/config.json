@@ -1,7 +1,9 @@
 {
     "readOnlyOnce": false,
     "serverPort": 8888,
-    "mirakurunPath": "http+unix://%2Fvar%2Frun%2Fmirakurun.sock/",
+    "socketioPort": 8888,
+    "clientSocketioPort": 8888,
+    "mirakurunPath": "http://docker.harekaze.mirakurun:40772/",
     "dbType": "sqlite3",
     "ffmpeg": "/usr/local/ffmpeg-tools/bin/ffmpeg",
     "ffprobe": "/usr/local/ffmpeg-tools/bin/ffprobe",
