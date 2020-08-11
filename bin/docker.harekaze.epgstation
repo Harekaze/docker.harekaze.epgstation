@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 DOCKER_IMAGE="l3tnun/epgstation"
-IMAGE_VERSION="v1.7.0"
+IMAGE_VERSION="v1.7.4"
 
 name="$(basename $0)"
 . /etc/profile
